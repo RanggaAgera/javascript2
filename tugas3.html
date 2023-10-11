@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ubah Teks dan Warna</title>
+</head>
+<body id="body">
+    <h1 id="judul">Teks yang Dapat Diubah</h1>
+    <p>
+        <button onclick="ubahTeks()">Ubah Teks</button>
+        <button onclick="ubahWarna()">Ubah Warna</button>
+        <button onclick="ubahBackgroundColor()">Ubah Background Text</button>
+        <button onclick="ubahBackground()">Ubah Background</button>
+    </p>
+
+    <script>
+        function ubahTeks() {
+            var judul = document.getElementById("judul");
+            judul.textContent = "Teks telah diubah!";
+        }
+
+        function ubahWarna() {
+            var judul = document.getElementById("judul");
+            judul.style.color = "blue";
+        }
+
+        function ubahBackgroundColor() {
+            var judul = document.getElementById("judul");
+            judul.style.backgroundColor = "lightgray";
+        }
+
+        function ubahBackground(){
+            var body = document.getElementById("body");
+            body.style.backgroundColor = "gray";
+        }
+    </script>
+</body>
+</html>
